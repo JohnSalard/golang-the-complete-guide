@@ -2,23 +2,20 @@ package main
 
 func main() {
 
-	cards := newDeck()
+	// cards := newDeck()
+	// cards.print()
 
-	// cards.printDeck()
-
+	// cards := newDeck()
 	// hand, remain := deal(cards, 5)
-	// hand.printDeck()
-	// fmt.Println(hand)
-	// fmt.Println(remain)
-
-	// greeting := "Hi there"
-	// fmt.Println(greeting)
+	// hand.print()
+	// remain.print()
+	// greeting := "สวัสดี"
 	// fmt.Println([]byte(greeting))
 
-	// fmt.Println(cards.toString())
-	// cards.saveToFile("ex.txt")
-	// result := newDeckFromFile("ex.txt")
-	// fmt.Println(result)
+	cards := newDeck()
+	cards.saveToFile("ex.txt")
+	result := newDeckFromFile("ex.txt")
+	result.print()
 
 	cards.shuffle()
 	// cards.printDeck()
